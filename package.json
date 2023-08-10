@@ -1,0 +1,50 @@
+{
+  "name": "ui-research",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "routing": "pass-notes ./routing/api/index.js",
+    "data": "pass-notes ./data/api/index.js"
+  },
+  "packageManager": "yarn@3.6.1",
+  "dependencies": {
+    "csstype": "^3.1.2",
+    "globby": "^13.2.2",
+    "goober": "^2.1.13",
+    "heliograph": "^7.0.0",
+    "history": "^5.3.0",
+    "lodash": "^4.17.21",
+    "passing-notes-websocket": "^1.1.2",
+    "radix3": "^1.0.1",
+    "solid-js": "^1.7.7",
+    "updeep": "^1.2.4"
+  },
+  "devDependencies": {
+    "ava": "^5.3.1",
+    "ava-patterns": "^3.2.1",
+    "passing-notes": "^6.6.1",
+    "passing-notes-ui": "^1.3.2",
+    "testdouble": "^3.18.0",
+    "xo": "^0.54.2"
+  },
+  "ava": {
+    "verbose": true,
+    "timeout": "5m"
+  },
+  "xo": {
+    "prettier": true,
+    "space": 2,
+    "semicolon": false,
+    "envs": [
+      "browser",
+      "node"
+    ],
+    "rules": {
+      "ava/no-import-test-files": "off",
+      "import/no-anonymous-default-export": "off",
+      "n/file-extension-in-import": "off",
+      "no-await-in-loop": "off",
+      "no-constant-condition": "off"
+    }
+  }
+}
